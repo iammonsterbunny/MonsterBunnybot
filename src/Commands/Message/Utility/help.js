@@ -28,20 +28,20 @@ export default {
   run: async ({ client, message, args }) => {
     if (!args[0]) {
       let flexx = new EmbedBuilder()
-        .setColor("#03e7fc") // Add your desired color manually here
+        .setColor("#0ff5e2") // Add your desired color manually here
         .setAuthor({ name: `${client.user.username} HelpDesk`, iconURL: client.user.displayAvatarURL() })
-        .setDescription(`Hey ${message.author}! I am Monster Bunny music bot, an Advanced Music Bot with the most User-Friendly Interface and\n\n <a:hi:1184070902330183790> A complete Music Bot for your server\n <a:hi:1184070902330183790> Providing you the best quality music\n\n <a:hi:1184070902330183790> [Invite](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands) | [Support](https://discord.com/invite/Z4GTY8yMat) | [webside](https://monster-bunny.github.io/.com/)`)
+        .setDescription(`Hey ${message.author}! I am ${client.user.username}, an Advanced Music Bot Get a great music experience\n\n <:prime:1184128532507541524>  Thanks for using ${client.user.username}\n <:prime:1184128532507541524>  [Invite](https://t.ly/MonsterBunny) | [Support](https://t.ly/MonsterBunny) | [Vote](https://t.ly/MonsterBunny)`)
         .addFields({
           name: `Command Categories`,
-          value: `<:music:1184082173897216010> \`:\` Music \n <:filters:1184079512993009676> \`:\` Filters \n <:utility:1184079806246174720> \`:\` Utility \n <:search_sources:1183261780454154290> \`:\` Sources`,
+          value: `<:music:1184082173897216010> \`:\` Music \n <:filters:1184196300724502598>  \`:\` Filters \n <:utility:1184196995729084468> \`:\` Utility \n <:sources:1184197983357636630> \`:\` Sources`,
         })
-        .setFooter({ text: `Monster Bunny - 2024's Best Music Bot`, iconURL: message.guild.iconURL({ dynamic: true }) })
+        .setFooter({ text: `ColdMusic - 2023's Best Music Bot`, iconURL: message.guild.iconURL({ dynamic: true }) })
         .setThumbnail(message.author.displayAvatarURL({ dynamic: true }));
 
       let b1 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`music`).setEmoji('1184082173897216010');
-      let b2 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`filters`).setEmoji('1184079512993009676');
-      let b3 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`utility`).setEmoji('1184079806246174720');
-      let b4 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`sources`).setEmoji('1183261780454154290');
+      let b2 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`filters`).setEmoji('1184196300724502598');
+      let b3 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`utility`).setEmoji('1184196995729084468');
+      let b4 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`sources`).setEmoji('1184197983357636630');
 
       let row = new ActionRowBuilder().addComponents(b1, b2, b3, b4);
 
@@ -86,7 +86,7 @@ export default {
         }
 
         const categoryEmbed = new EmbedBuilder()
-          .setColor("#03e7fc") // Add your desired color manually here
+          .setColor("#0ff5e2") // Add your desired color manually here
           .setTitle(categoryTitle)
           .setDescription(commands.join(', '));
 
